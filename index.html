@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forside</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+
+<body>
+
+    <section id="pageA">
+        <nav>
+            <ul>
+                <li><a href="#pageA">Video</a></li>
+                <li><a href="#pageB">Selvskade</a></li>
+                <li><a href="#pageC">Husk</a></li>
+            </ul>
+        </nav>
+    <div id="overlay"></div>
+<!-- End Overlay -->
+<!-- Start Special Centered Box -->
+<div id="specialBox">
+  <p></p>
+  <button onmousedown="toggleOverlay()"><i class="fas fa-times-circle fa-4x" style="color:white;"></i></button>
+  <video controls>
+    <source src="test.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+</div>
+<!-- End Special Centered Box -->
+<!-- Start Normal Page Content -->
+<div id="wrapper">
+  <button onmousedown="toggleOverlay()"><i class="fas fa-play fa-4x" style="color:white;"></i></button>
+
+</div>
+    </section>
+
+    <section id="pageB">
+        <div class="SelvskadeL">
+          <h1>Hvad er selvskade?<br>
+          <i class="fas fa-long-arrow-alt-right fa-3x" style="color:#FFF; float:right;"></i>
+      </h1>  </div>
+        <div class="SelvskadeR">
+          <p>I LMS forstår vi selvskade som en mestringsstrategi, der hjælper med at håndtere det, der er svært i dit liv.
+            Det kan være, at svære følelser, tanker og bekymringer virker uhåndgribelige og utydelige, og at de fyldere mere,
+            end du kan rumme. Selvskade kan være en måde at tackle udfordringer og ukontrollerbare situationer på. <br><br> Selvskade er en måde at flytte svære
+            tanker og følelser til noget konkret og tydeligt - nemlig kroppen. Det kan være en måde at distrahere sig selv og fjerne fokus fra det, som er svært.
+            Selvskade kan derfor umiddelbart opleves som en hjælp til at få det bedre, men kun kortvarigt, for den fjerner ikke problemerne. I steder føler man sig ofte skamfuld,
+            og det kan være med til at fastholde selvskaden.<br><br> Der er mange grunde til at man skader sig selv - der findes sjældent en enkelt forklaring.</p>
+        </div>
+      </section>
+    <div class="HjaelpL">
+      <p>Vores rådgivning henvender sig til mennesker, der er berørt af spiesforstyrrelser og/eller selvskade samt deres pårørende og fagpersoner.
+      <br><br> <strong>Telefon:</strong> Ring til rådgivningen Mandag-Torsdag kl 16-19 på tlf. 7010 1818
+    <br><strong>Personlig:</strong> Vi tilbyder personlig rådgivning i vores 8 lokalafdelinger. Du kan bestille tid Mandag-Torsdag mellem kl. 11-12 på tlf. 7010 1818
+    <br><strong>Øvrige tilbud:</strong> Læs mere om vores arbejde på Imsos.dk eller klik på knapperne nedenfor for at se hvordan du får hjælp.
+  </p>
+<center> <a href="https://facebook.com/lmsnyt" target="_blank"><i class="fab fa-facebook-square fa-4x" style="padding-right: 5px;color:darkblue;"></i></a><a href="https://hjaelp.lmsos.dk"><i class="fas fa-phone-square fa-4x" style="padding-left: 5px;color:red;"></i></a></center>
+    </div>
+    <div class="HjaelpR">
+  <h1>Få hjælp og rådgivning<br>
+    <i class="fas fa-long-arrow-alt-left fa-3x" style="color:#FFF; float:left;"></i>
+</h1>
+
+    </div>
+</section>
+    <section id="pageC">
+        <h1></h1>
+    </section>
+
+</body>
+
+</html>
+
+<script>
+function toggleOverlay(){
+	var overlay = document.getElementById('overlay');
+	var specialBox = document.getElementById('specialBox');
+	overlay.style.opacity = .8;
+	if(overlay.style.display == "block"){
+		overlay.style.display = "none";
+		specialBox.style.display = "none";
+	} else {
+		overlay.style.display = "block";
+		specialBox.style.display = "block";
+	}
+}
+</script>
