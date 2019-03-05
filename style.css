@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial;
+}
+
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url("gotham-rounded/GothamRoundedMedium.ttf");
+}
+
+@import url("http://fonts.googleapis.com/css?family=Roboto:300");
+
+
+html{
+    scroll-behavior: smooth;
+}
+section {
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+
+#pageA {
+    background-image: url(videocover.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+#pageB {
+    background: #008080;
+        height: 100vh;
+}
+
+#pageC {
+    background: #EDDFDF;
+    background-image: url(hand.png);
+    background-size: contain;
+background-position: right;
+background-repeat: no-repeat;
+        height: 100vh;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 5vh;
+}
+
+ul {
+    width: fit-content;
+    margin: auto;
+    list-style: none;
+}
+
+ul li {
+    float: left;
+    margin-right: 30px;
+    background-color: #3d3d3d;
+    opacity: 0.65;
+    padding: 20px;
+}
+
+ul li:hover {
+    float: left;
+    margin-right: 30px;
+    background-color: #000;
+    opacity: 0.65;
+    padding: 20px;
+}
+
+ul li a {
+    color: #FFF;
+    text-decoration: none;
+    opacity: 1;
+}
+
+ul li a:hover {
+    text-decoration: none;
+    color: darkorange;
+}
+
+/*TEST*/
+div#overlay {
+	display: none;
+	z-index: 2;
+	background: #000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+}
+div#specialBox {
+	display: none;
+	position: relative;
+	z-index: 3;
+	margin: 150px auto 0px auto;
+	width: 80vw;
+	height: 70vh;
+	background: #3d3d3d;
+	color: #000;
+  background-image: url("test.mp4")
+}
+div#wrapper {
+	position: absolute;
+  display: inline-block;
+	top: 50vh;
+left: 46vw}
+
+video {
+  width:74vw; height:70vh; float: right;
+}
+
+#wrapper button {
+  padding: 42px;
+  background-color: black;
+  position: absolute;
+}
+
+#specialBox button {
+  padding: 42px;
+  height: 70vh;
+  background-color: black;
+  position: absolute;
+}
+
+/*SIDE2*/
+#pageB {
+  height: 50vh;
+}
+
+.SelvskadeL {
+  width: 50%;
+  height: 50vh;
+  background-color: #c2bac6;
+  float: left;
+  display: inline-block;
+}
+
+.SelvskadeL h1 {
+  font-size: 4vw;
+  color: #FFF;
+    font-family: "Gotham Rounded";
+    padding: 55px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.SelvskadeR p {
+  padding: 55px;
+  font-size: 1.2vw;
+  font-family: "Roboto", Arial;
+}
+
+.SelvskadeR {
+  width: 50%;
+  height: 50vh;
+  background-color: #FFF;
+  float: right;
+  display: inline-block;
+}
+
+.HjaelpL {
+  width: 50%;
+  height: 50vh;
+    background-color: #FFFFFF;
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.HjaelpR {
+  width: 50%;
+  height: 50vh;
+  background-color: #c2bac6;
+  float: right;
+  display: inline-block;
+}
+
+.HjaelpR h1 {
+  font-size: 4vw;
+  color: #FFF;
+    font-family: "Gotham Rounded";
+    padding: 55px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.HjaelpL p {
+  padding: 55px;
+  font-size: 1.2vw;
+  font-family: "Roboto", Arial;
+}
