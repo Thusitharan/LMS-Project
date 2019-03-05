@@ -1,197 +1,93 @@
-* {
+*{
+    box-sizing: border-box;
+}
+
+body{
     margin: 0;
-    padding: 0;
-    font-family: "Roboto", Arial;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden; 
 }
 
-@font-face {
-  font-family: "Gotham Rounded";
-  src: url("gotham-rounded/GothamRoundedMedium.ttf");
-}
-
-@import url("http://fonts.googleapis.com/css?family=Roboto:300");
-
-
-html{
-    scroll-behavior: smooth;
-}
-section {
-    width: 100%;
+.v-header{
     height: 100vh;
-    float: left;
+    display: flex;
+    align-items: center;
+    color: #fff;
 }
 
-#pageA {
-    background-image: url(videocover.png);
-    background-size: cover;
-    height: 100vh;
-}
-
-#pageB {
-    background: #008080;
-        height: 100vh;
-}
-
-#pageC {
-    background: #EDDFDF;
-    background-image: url(hand.png);
-    background-size: contain;
-background-position: right;
-background-repeat: no-repeat;
-        height: 100vh;
-}
-
-nav {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 5vh;
-}
-
-ul {
-    width: fit-content;
+.container{
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: auto;
-    list-style: none;
+    text-align: center;
 }
 
-ul li {
-    float: left;
-    margin-right: 30px;
-    background-color: #3d3d3d;
-    opacity: 0.65;
-    padding: 20px;
+.fullscreen-video-wrap{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;  
 }
 
-ul li:hover {
-    float: left;
-    margin-right: 30px;
-    background-color: #000;
-    opacity: 0.65;
-    padding: 20px;
+.fullscreen-video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
 }
 
-ul li a {
-    color: #FFF;
+.header-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: #1B74E7;
+    z-index: 1;
+    opacity: 0.85;
+}
+
+.header-content{
+    z-index: 2;
+}
+
+.header-content h1{
+    font-size: 50px;
+    margin-bottom:0;
+}
+
+.header-content p {
+    font-size: 24px;
+    display: block;
+    padding-bottom: 32px;
+}
+
+.btn{
+    background: #34b3a0;
+    color:#fff;
+    font-size:19.2px;
+    padding: 16px 32px;
     text-decoration: none;
-    opacity: 1;
 }
 
-ul li a:hover {
-    text-decoration: none;
-    color: darkorange;
+.section{
+    padding: 20px 0;
+}
+.section-b {
+    background: #333;
+    color: #fff;
 }
 
-/*TEST*/
-div#overlay {
-	display: none;
-	z-index: 2;
-	background: #000;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	text-align: center;
-}
-div#specialBox {
-	display: none;
-	position: relative;
-	z-index: 3;
-	margin: 150px auto 0px auto;
-	width: 80vw;
-	height: 70vh;
-	background: #3d3d3d;
-	color: #000;
-  background-image: url("test.mp4")
-}
-div#wrapper {
-	position: absolute;
-  display: inline-block;
-	top: 50vh;
-left: 46vw}
-
-video {
-  width:74vw; height:70vh; float: right;
+@media(max-width:960px){
+    .container{
+        padding-right:3rem;
+        padding-left:3rem;
+    }
 }
 
-#wrapper button {
-  padding: 42px;
-  background-color: black;
-  position: absolute;
-}
 
-#specialBox button {
-  padding: 42px;
-  height: 70vh;
-  background-color: black;
-  position: absolute;
-}
-
-/*SIDE2*/
-#pageB {
-  height: 50vh;
-}
-
-.SelvskadeL {
-  width: 50%;
-  height: 50vh;
-  background-color: #c2bac6;
-  float: left;
-  display: inline-block;
-}
-
-.SelvskadeL h1 {
-  font-size: 4vw;
-  color: #FFF;
-    font-family: "Gotham Rounded";
-    padding: 55px;
-    text-transform: uppercase;
-    text-align: right;
-}
-
-.SelvskadeR p {
-  padding: 55px;
-  font-size: 1.2vw;
-  font-family: "Roboto", Arial;
-}
-
-.SelvskadeR {
-  width: 50%;
-  height: 50vh;
-  background-color: #FFF;
-  float: right;
-  display: inline-block;
-}
-
-.HjaelpL {
-  width: 50%;
-  height: 50vh;
-    background-color: #FFFFFF;
-    float: left;
-    display: inline-block;
-    overflow: hidden;
-
-}
-
-.HjaelpR {
-  width: 50%;
-  height: 50vh;
-  background-color: #c2bac6;
-  float: right;
-  display: inline-block;
-}
-
-.HjaelpR h1 {
-  font-size: 4vw;
-  color: #FFF;
-    font-family: "Gotham Rounded";
-    padding: 55px;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-.HjaelpL p {
-  padding: 55px;
-  font-size: 1.2vw;
-  font-family: "Roboto", Arial;
-}
+    
