@@ -8,11 +8,12 @@ body{
     font-size: 14px;
     line-height: 1.5;
     color: #333;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 .v-header{
     height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     color: #fff;
@@ -26,6 +27,31 @@ body{
     text-align: center;
 }
 
+.footer {    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;}
+
+.footer h1 {font-size: 1vw;}
+
+.ok {
+  width: 16vw;
+  height: auto;
+  text-align: center;
+}
+
+.ok2 {
+  width: 10vw;
+  height: auto;
+  text-align: center;
+}
+
+.header-content p{
+  text-decoration: none;
+  text-align: center;
+  font-size: 2vw;
+}
 
 .fullscreen-video-wrap{
     position: absolute;
@@ -33,7 +59,7 @@ body{
     left: 0;
     width: 100%;
     height: 100vh;
-    overflow: hidden;  
+    overflow: hidden;
 }
 
 .fullscreen-video-wrap video {
@@ -93,7 +119,7 @@ body{
 
 .section{
     padding: 50px 80px;
-    overflow: auto; 
+    overflow: auto;
 }
 
 .section-a{
@@ -105,7 +131,7 @@ body{
     color:white;
     font-size: 40px;
     text-shadow: 2px 2px black;
-    
+
 }
 
 .section-a h2{
@@ -157,17 +183,17 @@ body{
     font-size: 27px;
     letter-spacing: 8px;
     text-transform: uppercase;
-    
+
 }
 
 .ptext .border{
   box-sizing: border-box;
-  padding: 30px;  
+  padding: 30px;
   border: 4px solid black;
   background-color: white opacity 45%;
   color: black;
   padding: 20px;
-    
+
 }
 
 .ptext .border .trans{
@@ -191,6 +217,3 @@ body{
         padding-left:3rem;
     }
 }
-
-
-    
