@@ -26,6 +26,7 @@ body{
     text-align: center;
 }
 
+
 .fullscreen-video-wrap{
     position: absolute;
     top:0;
@@ -46,42 +47,144 @@ body{
     position: absolute;
     top:0;
     left: 0;
-    background: #1B74E7;
+    background: black;
     z-index: 1;
     opacity: 0.85;
 }
 
+
+/*Dette er selve teksten som vises foran videoen*/
 .header-content{
     z-index: 2;
+    margin: auto;
 }
 
-.header-content h1{
-    font-size: 50px;
-    margin-bottom:0;
-}
 
-.header-content p {
-    font-size: 24px;
-    display: block;
-    padding-bottom: 32px;
-}
 
 .btn{
     background: #34b3a0;
     color:#fff;
-    font-size:19.2px;
+    font-size:30px;
     padding: 16px 32px;
     text-decoration: none;
 }
 
-.section{
-    padding: 20px 0;
-}
-.section-b {
-    background: #333;
-    color: #fff;
+.pigm2,.pigm3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
+.pigm2{
+    background-image: url(img/ani.jpg);
+    min-height: 800px;
+}
+
+.pigm3{
+    background-image: url(img/livet.png);
+    min-height: 800px;
+}
+
+
+/*Sider af sektioner*/
+
+.section{
+    padding: 50px 80px;
+    overflow: auto; 
+}
+
+.section-a{
+ background-color: #C3CECC;
+}
+
+
+.section-a h1{
+    color:white;
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+    
+}
+
+.section-a h2{
+    color:white;
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+.section-a p{
+    color:black;
+    font-size: 20px;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+
+.section-a img{
+    max-height: 100%;
+    max-width: 40%;
+}
+
+.section-b {
+    background: #FFE6E9;
+    color: black;
+}
+
+.section-b h1 {
+    color:white;
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+.section-b p{
+       color:black;
+    font-size: 20px;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+.ptext{
+    font-family: BodoniXT;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    
+}
+
+.ptext .border{
+  box-sizing: border-box;
+  padding: 30px;  
+  border: 4px solid black;
+  background-color: white opacity 45%;
+  color: black;
+  padding: 20px;
+    
+}
+
+.ptext .border .trans{
+    background-color: transparent;
+}
+
+
+
+
+@media(max-width:568px){
+    .pigm2,.pigm3{
+      background-attachment: scroll;
+    }
+    .ptext{
+        font-size: 20px;
+    }
+}
 @media(max-width:960px){
     .container{
         padding-right:3rem;
